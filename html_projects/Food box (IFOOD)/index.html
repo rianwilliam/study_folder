@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="./Imagens/logo-food-box.png" type="image/x-icon">
+    <script src="./script.js" defer></script>
+    <script src="./login.js" defer></script>
+    <script src="https://kit.fontawesome.com/1c04ec9dcc.js" crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Food Box</title>
+</head>
+<body>
+
+    <!-- Login -->
+    <section id="login" >
+        <div class="popup">
+            <img src="./Imagens/logo-food-box.png" alt="" class="logo">
+            <h1> Olá seja Bem vindo ao food box, Como Devemos Chama-lo? </h1>
+            <form name="main-form" action="#" method="get">
+                <input type="text" name="user-name" class="user-name" placeholder="Insira Seu Nome">
+            </form>
+            <button type="button" class="login-btn">Confirmar</button>
+        </div>
+    </section>
+
+    <!-- Cabeçalho -->
+    <header>
+        <section class="header-section">
+            <div>
+                <h1>Food Box</h1>
+            </div>
+            <div class="menu-mobile">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="menu-desktop">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#perguntas-frequentes">Perguntas Frequentes</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <!-- Section 1 -->
+    <section class="section1" id="home">
+        <div>
+            <h1>Olá <span class="user"></span> Seja Bem vindo(a).</h1>
+            <h5>Lorem Ipsum Dolor Sit Amet, dolor amet sit, ex ex nec risus. Donec mattis fermentum sem, non consectetur ante
+                tempus et. Vestibulum imperdiet quam ac nulla interdum euismod.</h5>
+            <div class="btns-section1">
+                <a href=""><button type="button">Nossos Produtos</button></a>
+                <a href=""><button type="button">Lorem ipsum</button></a>
+            </div>
+        </div>
+        <div>
+            <video src="./Imagens/food-box-video.mp4" class="video"></video>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section2">
+        <div>
+            <div class="img-section2"></div>
+        </div>
+        <div class="cards-section2">
+            <div class="animated-card-div-1 hide">
+                <i class="fa-solid fa-mobile-screen-button fa-2x"></i>
+                <h1>Realize o pedido pelo nosso <span>App</span></h1>
+            </div>
+            <div></div>
+            <div></div>
+            <div class="animated-card-div-2 hide">
+                <i class="fa-solid fa-sack-dollar fa-2x"></i>
+                <h1>Efetue o pagamento e ganhe <span>Cashback</span></h1>
+            </div>
+            <div class="animated-card-div-3 hide">
+                <i class="fa-solid fa-truck fa-2x"></i>
+                <h1>E pronto, seu pedido já está a <span>caminho</span></h1>
+            </div>
+            <div></div>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="section3" id="perguntas-frequentes">
+        <div>
+            <h1>Perguntas Frequentes</h1>
+        </div>
+        <section class="perguntas-frequentes">
+            <div class="column">
+                <div class="item-acordeon1">
+                    <div class="titulo-perguntas-frequentes">
+                        <h1>Porque comprar conosco?</h1> <img src="./Imagens/arrow-right.svg" alt="">
+                    </div>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis ullamcorper risus,
+                    a tristique lacus venenatis et. Nam eu mattis libero. Nulla vitae ligula eu diam consectetur finibus.
+                    Fusce laoreet aliquet eros in ornare. Etiam quis lorem sit amet massa efficitur lacinia id eu tellus.
+                    Cras sollicitudin, libero eu porta porttitor, risus augue blandit arcu, et faucibus erat purus </h5>
+                </div>
+                <div class="item-acordeon2">
+                    <div class="titulo-perguntas-frequentes">
+                        <h1>Em quais áreas fazemos entrega?</h1> <img src="./Imagens/arrow-right.svg" alt="">
+                    </div>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis ullamcorper risus,
+                    a tristique lacus venenatis et. Nam eu mattis libero. Nulla vitae ligula eu diam consectetur finibus.
+                    Fusce laoreet aliquet eros in ornare. Etiam quis lorem sit amet massa efficitur lacinia id eu tellus.
+                    Cras sollicitudin, libero eu porta porttitor, risus augue blandit arcu, et faucibus erat purus</h5>
+                </div>
+            </div>
+            <div class="column">
+                <div class="item-acordeon3">
+                    <div class="titulo-perguntas-frequentes">
+                        <h1>Quanto vou receber de cashback</h1> <img src="./Imagens/arrow-right.svg" alt="">
+                    </div>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis ullamcorper risus,
+                    a tristique lacus venenatis et. Nam eu mattis libero. Nulla vitae ligula eu diam consectetur finibus.
+                    Fusce laoreet aliquet eros in ornare. Etiam quis lorem sit amet massa efficitur lacinia id eu tellus.
+                    Cras sollicitudin, libero eu porta porttitor, risus augue blandit arcu, et faucibus erat purus </h5>
+                </div>
+                <div class="item-acordeon4">
+                    <div class="titulo-perguntas-frequentes">
+                        <h1>A entrega chega rápido?</h1> <img src="./Imagens/arrow-right.svg" alt="">
+                    </div>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis ullamcorper risus,
+                    a tristique lacus venenatis et. Nam eu mattis libero. Nulla vitae ligula eu diam consectetur finibus.
+                    Fusce laoreet aliquet eros in ornare. Etiam quis lorem sit amet massa efficitur lacinia id eu tellus.
+                    Cras sollicitudin, libero eu porta porttitor, risus augue blandit arcu, et faucibus erat purus </h5>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="section4">
+        <div class="fale-conosco">
+            <div>
+                <h1>Fale conosco</h1>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="contacts">
+                <div>
+                    <i class="fa-solid fa-envelope-circle-check"></i>
+                    <h2>loremipsum@email.com</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <h2>(00) 1111-2222</h2>
+                </div>
+            </div>
+        </div>
+        <div>
+            <form name="form-contact" action="#" method="get" class="form-contact">
+                <label for="user-name">Seu Nome</label>
+                    <input type="text" name="user-name" placeholder="Ex: Marcos" class="user-name field"/>
+                <label for="user-email">Seu email</label>
+                    <input type="email" name="user-email" placeholder="Ex: marcos@email.com" class="email field"/>
+                <label for="sua-mensagem">Sua Mensagem</label>
+                <textarea style="resize: none" rows="5" class="textarea" name="sua-mensagem" placeholder="Fale-nos o que achou do nosso serviço"></textarea>
+                <input type="submit" name="enviar-form-contact" class="enviar-form-contact"/>
+            </form>
+        </div>
+    </section>
+
+
+
+
+</body>
+</html>

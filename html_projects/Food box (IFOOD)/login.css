@@ -1,0 +1,117 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 1rem;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+html.on {
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#login {
+    transition: all ease 500ms;
+    transform: scale(0);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+}
+
+#login.on {
+    transform: scale(1);
+
+    backdrop-filter: blur(2px);
+    background: rgba(17, 17, 17, 0.418);
+
+    z-index: 999;
+}
+
+#login .popup {
+    transform: scale(1);
+
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    width: 30%;
+    height: 70%;
+
+    padding: 0 5px;
+
+    /* Tamanho do login em PXs
+    width: 600px; 
+    height: 300px; 
+    */
+
+    background-color: white;
+    border-radius: 9px;
+    color: black;
+
+    text-align: center;
+}
+
+#login .popup .logo {
+    width: 80px;
+    height: 80px;
+}
+
+#login .popup h1 {
+    font-size: 1.4rem;
+}
+
+#login .popup .user-name {
+    padding: 6px;
+    
+    border: 1px solid #9b9b9b;
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+#login .popup .login-btn {
+    padding: 9px 30px;
+
+    border-radius: 20px 0 20px 0;
+    border: none;
+
+    cursor: pointer;
+
+    transition: all 500ms ease-in-out;
+
+    background: #FF1616;
+    color: white;
+}
+
+#login .popup .login-btn:hover {
+    background: #ad0000;
+}
+

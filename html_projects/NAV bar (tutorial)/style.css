@@ -1,0 +1,141 @@
+*,
+::after,
+::before
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-center .nav-header .nav-toggle {
+    border: none;
+    background: transparent;
+    display: none;
+}
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    background: rgb(8, 1, 139);
+}
+
+a {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    transition: 400ms ease-in-out;
+}
+
+a:hover {
+    color: #49A6E9;
+}
+
+.one,
+.two,
+.three {
+    margin-top: 4px;
+    background-color: #49A6E9;
+    width: 28px;
+    height: 4px;
+
+    transition: all 400ms ease-in-out;
+}
+
+.nav-center {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    justify-items: center;
+    align-items: center;
+    height: 110px;
+    min-width: 100vw;
+    width: 100vw;
+    padding: 0px 34px;
+
+    background: white;
+}
+
+.nav-center .links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav-center .social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media (max-width: 870px) {
+    .nav-center {
+        display: block;
+        padding: 0;
+    }
+
+    .nav-header {
+        margin: 0px 14px;
+
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        height: 110px;
+        align-items: center;
+    }
+
+    .nav-header .logo {
+        justify-self: left;
+    }
+
+    .nav-center .social-icons,
+    .nav-center .links {
+        display: none;
+    }
+
+    .nav-center .nav-header .nav-toggle {
+        display: block;
+        justify-self: right;
+    }
+
+    .nav-center .links {
+        display: flex;
+        flex-direction: column;
+        padding: 7px 0px 7px 20px;
+        margin-top: -20px;
+
+        background: white;
+
+        overflow:hidden;
+        height: 0;
+        transition: 200ms ease-in-out;
+        
+    }
+
+    .nav-center .links.on {
+        overflow: visible;
+        height: 180px;
+    }
+
+    .nav-toggle.on .one {
+        transform: rotate(45deg) translateY(10px);
+    }
+
+    .nav-toggle.on .two {
+        opacity: 0;
+    }
+
+    .nav-toggle.on .three {
+        transform: rotate(-45deg) translateY(-12px) translateX(0.5px);
+    }
+
+    .nav-center .links li {
+        transform: scale(0);
+        transition: transform 400ms ease-in-out;
+    }
+
+    .nav-center .links.on li {
+        transition-delay: 100ms;
+        transform: scale(1);
+    }
+}

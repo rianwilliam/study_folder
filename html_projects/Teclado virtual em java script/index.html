@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclado virtual em javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcute icon" href="Panda.png">
+</head>
+<body>
+    <div>
+        <form name="form1"> <img src="monitor.png" width="400" height="370">
+            <textarea id="tecladovirtual" rows="5" cols="1" style="resize: none" placeholder="Insira suas anotações" disabled></textarea>
+        </form>
+    </div>
+    <section class="secao1">
+        <div class="div0">
+            <button onclick="insert('1')">1</button>
+            <button onclick="insert('2')">2</button>
+            <button onclick="insert('3')">3</button>
+            <button onclick="insert('4')">4</button>
+            <button onclick="insert('5')">5</button>
+            <button onclick="insert('6')">6</button>
+            <button onclick="insert('7')">7</button>
+            <button onclick="insert('8')">8</button>
+            <button onclick="insert('9')">9</button>
+            <button onclick="insert('0')">0</button>
+            <button onclick="insert('-')">-</button>
+            <button onclick="insert('=')">=</button>
+            <button onclick="back()"><img src="right-arrow.png" width="17" height="17"></button>
+        </div>
+        <div class="div1">
+            <button onclick="insert('    ')"><img src="exchange.png" width="17" height="17"></button>
+            <button onclick="insert('q')">q</button>
+            <button onclick="insert('w')">w</button>
+            <button onclick="insert('e')">e</button>
+            <button onclick="insert('r')">r</button>
+            <button onclick="insert('t')">t</button>
+            <button onclick="insert('y')">y</button>
+            <button onclick="insert('u')">u</button>
+            <button onclick="insert('i')">i</button>
+            <button onclick="insert('o')">o</button>
+            <button onclick="insert('p')">p</button>
+            <button onclick="clean()">del all</button>
+        </div>
+        <div class="div2">
+            <!-- <button onclick="maiuscula()">FIXA</button> -->
+            <button onclick="insert('a')">a</button>
+            <button onclick="insert('s')">s</button>
+            <button onclick="insert('d')">d</button>
+            <button onclick="insert('f')">f</button>
+            <button onclick="insert('g')">g</button>
+            <button onclick="insert('h')">h</button>
+            <button onclick="insert('j')">j</button>
+            <button onclick="insert('k')">k</button>
+            <button onclick="insert('l')">l</button>
+            <button onclick="insert('ç')">ç</button>
+            
+        </div>
+        <div class="div3">
+            <button onclick="insert('z')">z</button>
+            <button onclick="insert('x')">x</button>
+            <button onclick="insert('c')">c</button>
+            <button onclick="insert('v')">v</button>
+            <button onclick="insert('b')">b</button>
+            <button onclick="insert('n')">n</button>
+            <button onclick="insert('m')">m</button>
+            <button onclick="insert(',')">,</button>
+            <button onclick="insert('.')">.</button>
+        </div>
+        <div class="div4">
+        <table>
+            <tr>
+                <td rowspan="4"  onclick="insert(' ')"></td>
+            </tr>
+        </table>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

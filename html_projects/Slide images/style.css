@@ -1,0 +1,54 @@
+#images-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+#images-container .imagem {
+    width: 100vw;
+    height: 100%;
+    transition: all 400ms ease-in-out;
+}
+
+.teste {
+    transform: translateX(-200%);
+}
+
+.container-btn {
+    width: 100vw;
+    overflow-x: hidden;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    margin-top: -30px;
+}
+
+.container-btn .center-btn {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
+
+.container-btn .center-btn .img-btn{
+    width: 10%;
+    height: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.ativo {
+    background-color: rgba(1, 212, 240, 0.877) !important;
+}
+
+@media screen and (max-width: 800px) {
+    .container-btn .center-btn {
+        width: 90%;
+    }
+}

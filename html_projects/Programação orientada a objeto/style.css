@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+form > div {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+form input {
+    border: 1px solid black;
+}
+
+.div-table {
+    margin-top: 100px;
+    width: 90%;
+    text-align: center;
+}
+
+.btn-setor {
+    padding: 3px;
+    transition: all 400ms ease-in-out;
+}
+
+.btn-setor.marked {
+    background-color: blue;
+    color: white;
+}

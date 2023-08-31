@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* body {
+    background-image: url("./background.png");
+    background-repeat: repeat;
+} */
+
+.msg {
+    color: white;
+    position: absolute;
+    font-size: 100px;
+    text-align: center;
+}

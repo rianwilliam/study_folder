@@ -1,0 +1,18 @@
+// this.ctx.fillRect(this.x,this.y,this.largura,this.altura)
+
+// (this.vivo) && (!this.invencivel) &&
+// (this.bola.y <= this.y + this.altura && this.bola.y + this.bola.circunferencia > this.y) && 
+// (this.bola.x <= this.x + this.largura && (this.bola.x + this.bola.circunferencia) >= this.x))
+
+// 
+// let imagem = new Image()
+// imagem.src = "./images/spritesBlocos.png  "
+// imagem.onload = () => {
+    // this.imagem = imagem
+    // this.larguraSprite = this.imagem.width / 2
+    // this.alturaSprite = this.imagem.height / 4
+// }
+// 
+
+// this.ctx.arc(this.x,this.y,this.circunferencia,(Math.PI/180)*0,(Math.PI*0.5),false)
+// this.ctx.drawImage(bolinha,0,0,bolinha.width,bolinha.height,this.x,this.y,this.largura,this.altura)

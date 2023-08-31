@@ -1,0 +1,21 @@
+#input-buscar {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.button {
+    width: fit-content;
+    padding: 5px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+}
+
+.divs {
+    border: 1px solid blue;
+    border-radius: 10px 0px 10px 0px;
+    padding: 10px 7%;
+    margin: 4px 0px;
+}

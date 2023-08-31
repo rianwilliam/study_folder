@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: linear-gradient(20deg, blue, black);
+    min-height: 100vh;
+    color: white;
+}
+
+#contador {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   margin: auto;
+   height: 100px;
+   width: 500px;
+   text-align: center;
+}
+
+#contador p {
+    margin-bottom: 40px;
+    font-size: 80px;
+}
+
+#contador button {
+    padding: 20px;
+    border-radius: 14px;
+    border: none;
+    margin: 0px 13px 0px 13px;
+    font-size: 15px;
+    cursor: pointer;
+}

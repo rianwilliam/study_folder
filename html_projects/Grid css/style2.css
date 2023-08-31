@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background: black;
+    width: 100vw; /* O vw se aplica a largura total, igual o vh no height */
+    height: 100vh;
+
+    display: grid;
+    /*grid-template-columns: 10px 10px 10px;  Aqui são três colunas ou seja 33% 33% 33% */
+    /*grid-template-rows: 10px 10px 10px;  Aqui são linhas que também são todas em 33% */
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-gap: 5px;
+
+
+    /*justify-content: end;  Joga para o final */
+    /*justify-content: space-between;  É o espaço igual entre os elementos */
+    /*justify-content: space-around;  É o espaço ao redor dos elementos */
+    /*justify-content: space-evenly;  É um espçao continuo é o mesmo tanto de espaço para cada um deles */
+
+    /*align-content: end;  Vai para baixo na vertical */
+    /*align-content: center;  Centro da página */
+    /*align-content: space-between;  Mesma aplicação so que na vertical */
+    /*align-content: space-around;  Mesma aplicação só que na vertical */
+    /*align-content: space-evenly;  Mesma aplicação so que na vertical */
+
+    justify-items: end; /* Utiliza para movimentar os items dentro do gird quando eles não preenchem completamente o espaço que lhes foi definido, abaixo por exeplo defini que as divs iriam ter apenas 50% do tamnho geral */
+    align-items: center;
+
+    /* Justify self é aplicado dentro da div ao invés de dentro do container */
+    /* Align self é a mesma lógica */
+}
+
+
+.container > div {
+    background: red;
+    height: 50%;
+    width: 50%;
+}

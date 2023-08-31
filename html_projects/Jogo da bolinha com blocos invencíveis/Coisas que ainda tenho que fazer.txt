@@ -1,0 +1,26 @@
+Fazer a classe de upgrades no qual irá pegar a posçição X e Y do bloco quebrado e irá spawnar nela, ele vai descer até o jogador e ativar o upgrade
+Upgrades:
+Fazer o player ficar maior
+SuperBola
+Arminha
+Player Mais Rápido
+Vida Extra
+
+Fazer a bola, o cenário, os efeitos sonoros.
+
+Personalizar a tela de Game-over.
+
+Personalizar as informações de vida e pontos
+
+Criar o menu de opções para definir a velocidade da bola (e outras coisas que irei pensar futuramente)
+
+Fazer o jogo funcionar para Mobile
+
+Fazer as imagens serem carregadas ao iniciar o jogo (Falar com o nassinger) // Feito
+
+Fazer as sombras dos blocos // Feito
+
+Fazer a mensagem de nível
+
+Adicionar os sons
+

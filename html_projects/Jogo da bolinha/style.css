@@ -1,0 +1,92 @@
+body {
+    background-image: url("./images/background.png");
+    background-repeat: repeat;
+    animation: infinite background 19s;
+}
+
+@keyframes background {
+    100% {
+        background-position-y: 100vh;
+    }
+}
+
+.game {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    color: white !important;
+}
+
+canvas {
+    border: 1px solid black;
+    background-color: white;
+}
+
+video {
+    position: absolute;
+    width: 100px;
+    z-index: 100;
+}
+
+.btn-iniciar {
+    padding: 10px;
+    position: absolute;
+    cursor: pointer;
+    width: 300px;
+    height: 5.5%;
+    background-color: #ef4f4f;
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: .2s;
+    box-shadow: 0 6px 0 #BB1542;
+}
+
+.btn-iniciar:active {
+    box-shadow: none;
+    transform: translateY(6px);
+}
+
+.game-over {
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    color: white;
+    display: none;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.upgradeText {
+    position: absolute;
+    margin-top: 10%;
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+    color: black;
+}
+
+.upgradeText.ativo{
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+}
+
+.recurso {
+    display: none;
+}
+
+.infos {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+    text-align: center;
+}

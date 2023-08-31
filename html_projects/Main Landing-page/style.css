@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+:root {
+    --main-color: #230439;
+    --secondaty-color: #3D016D;
+    --primary-text-color: #1F0036;
+    --secondary-text-color: #3D006C;
+}
+
+header {
+    background-color: var(--main-color);
+}
+
+.menu {
+    width: 50%;
+}
+
+.logotipo {
+    font-size: 2rem !important;
+}
+
+.nav-btn {
+    background-color: white;
+    padding: 10px 55px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-weight: 600;
+    color: var(--secondary-text-color);
+}
+
+.nav-link {
+    font-weight: 500 !important;
+    color: white !important;
+}
+
+.bars {
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 4px 0px;
+}
+
+.menu-hamburguer {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .menu {
+        width: 100%;
+        gap: 4px;
+    }
+
+    .nav-btn {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        padding: 10px 20px;
+        border-radius: 0 40px 40px;
+    }
+}

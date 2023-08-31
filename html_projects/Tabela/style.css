@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body,
+html {
+    font-family: 'poppins', sans-serif;
+}
+
+a {
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.form-container {
+    width: 30vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 100px;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    background-color: #0ca0ba;
+}
+
+.data-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*! Toggle cargos !*/
+.options-container {
+    height: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    transition: all 200ms ease-in-out;
+    margin-bottom: 10px;
+}
+
+#cargos {
+    text-align: center;
+    width: 75%;
+    height: 3%;
+}
+
+.opcoes {
+    text-align: center;
+    width: 75%;
+    height: 25%;
+}
+
+.activate {
+    transition: all 200ms ease-in-out;
+    height: 76px;
+    text-align: center;
+}
+
+/*! User gender !*/
+.user-gender {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-gender div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+
+#masculino,
+#feminino {
+    appearance: none;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    transition: all 400ms ease-in-out;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#masculino:before,
+#feminino:before {
+    content: '';
+    position: absolute;
+    background-color: purple;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+
+#masculino:checked:before,
+#feminino:checked:before {
+    opacity: 1;
+}
+
+#masculino:focus,
+#feminino:focus {
+    box-shadow: 0px 0px 5px purple;
+}
+
+/*! Tabela !*/
+
+.table-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastros {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.cadastros tr {
+    display: grid;
+    grid-template-columns: repeat(5, 0.5fr);
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.cadastros tr td {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cadastros tr th {
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.cadastros .cabecalho {
+    border: 1px solid black;
+}

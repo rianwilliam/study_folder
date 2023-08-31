@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Dropdown</title>
+    <link rel="shortcut icon" href="./Panda.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    </style>
+    
+</head>
+<body >
+    <!-- Cabeçalho -->
+    <header>
+        <div class="div_header">
+        <img src="./Logo.png" alt="Logo" class="logo">
+        <ul class="header_menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div id="menu_bar_on">
+            <img src="./Barra do menu.png" alt="Dropdown Menu Bar" width="27" height="27" id="image_menu_dropdown" onclick="open_menu()"> 
+            <img src="./close.png" width="27" height="27" id="close_menu_dropdown" onclick="open_menu()">
+        </div>
+        </div>
+
+        <!-- Menu dropdown -->
+        <section id="section_dropdown" >
+            <div id="div_dropdown_on">
+                <img src="./Logo.png" alt="Logo menu">
+                <ul class="menu_dropdown">
+                    <li><a href="#">Our shop</a></li>
+                    <li><a href="#">Social</a></li>
+                    <li><a href="#">Privacity Politic</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    
+    <!-- Seção 1 -->
+    <section class="section_1" >
+        <div class="section_1_div">
+            <div class="section_1_text">
+            <h5>Modern App Landing</h5>
+            <h1>Best Mobile Showcase</h1>
+            <h3>In our endeavour to help entrepreneurs to grow their businesses, we published lot of insightful business articles last year</h3>
+            <button type="button">Read Details</button>
+            </div>
+        </div>
+        <div class="section_1_banner">
+            <img src="./app-mockup-banner.png" alt="App-mockup" >
+        </div>
+    </section>
+
+    <!-- Seção 2 -->
+    <section class="section_2">
+        <img src="./client-logo-1.png" alt="Client_logo" height="70" width="70">
+        <img src="./client-logo-2.png" alt="Client_logo" height="70" width="130">
+        <img src="./client-logo-3.png" alt="Client_logo" height="70" width="70">
+        <img src="./client-logo-4.png" alt="Client_logo" height="40" width="130">
+        <img src="./client-logo-5.png" alt="Client_logo" height="70" width="70">
+    </section>
+
+    <!-- Seção 3 -->
+    <section class="section_3">
+        <h6>Our Core Services</h6>
+        <h1>Services You Will Get From US</h1>
+        <div class="div_section_3">
+            <div class="cards_section_3">
+                <img src="./service-1.png" alt="Service_1">
+                <h2><span>Great</span> Design & UX</h2>
+                <h3>In our endeavor entrepreneur ensure to grow their businesses, we pub to lashed lot of insightful.</h3>
+            </div>
+            <div class="cards_section_3">
+                <img src="./service-2.png" alt="Service_2">
+                <h2><span>Book Your</span> Provider</h2>
+                <h3>In our endeavor entrepreneur ensure to grow their businesses, we pub to lashed lot of insightful.</h3>
+            </div>
+            <div class="cards_section_3">
+                <img src="./service3.png" alt="Service_3">
+                <h2><span>Secure</span> Multi-Usable</h2>
+                <h3>In our endeavor entrepreneur ensure to grow their businesses, we pub to lashed lot of insightful.</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 4 -->
+    <section class="section_4">
+        <div><img src="./app-features.png" alt="App_features"></div>
+        <div>
+            <h2>Why Our Apps</h2>
+            <h1>Solve your problem with very faster</h1>
+            <h3>Our designers and engineers know collaboration is the essence of any project It´s a simple philosophy we followed for nearly two decades. And it delivers is results. Commodo consequat. Duis aute irure dolor in reprehenderit in thems voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint oppi occaecat cupidatat non proident</h3>
+            <button type="button">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Seção 5 -->
+    <section class="section_5">
+        <div class="section_5_div1">
+            <h2>Frequently asked questions</h2>
+            <h1>Solve your problem with very faster</h1>
+            <button type="button">How to setup up</button>
+            <button type="button">How to find content</button>
+            <button type="button">How to change background</button>
+        </div>
+        <div>
+            <img src="./faq-mockups.png" alt="Faq-Mockups">
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

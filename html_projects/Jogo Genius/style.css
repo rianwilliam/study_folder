@@ -1,0 +1,52 @@
+.blocos {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocos > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.cores {
+    width: 15vw;
+    height: 15vw;
+    border: 5px solid black;
+    cursor: pointer;
+}
+
+.verde {
+    background-color: green;
+    border-radius: 100% 0% 0% 0%;
+    transition: all 50ms ease-out;
+}
+
+.vermelho {
+    background-color: rgb(172, 0, 0);
+    border-radius: 0% 100% 0% 0%;
+    transition: all 50ms ease-in-out;
+}
+
+.amarelo {
+    background-color: rgb(182, 182, 1);
+    border-radius: 0% 0% 0% 100%;
+    transition: all 50ms ease-in-out;
+}
+
+.azul {
+    background-color: rgb(0, 0, 186);
+    border-radius: 0% 0% 100% 0%;
+    transition: all 50ms ease-in-out;
+}
+
+#play {
+    margin-top: 100px;
+    padding: 7px 50px;
+    border-radius: 0px 20px 0px 20px;
+    background-color: black;
+    color: white;
+}

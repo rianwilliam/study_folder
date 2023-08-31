@@ -1,0 +1,18 @@
+.quadrado {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+    background-color: #f4f4f4;
+}
+
+.caixa {
+    border: 1px solid #000;
+    padding: 6px;
+    margin: 6px;
+    color: #fff;
+}
+
+.clear_fix {
+    clear: both;
+}
